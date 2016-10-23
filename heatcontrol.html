@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="heat.css">
+	<title>Home Heating Control Scheduler</title>
+
+</head>
+
+<body>
+
+<h1>Heater Control Settings</h1>
+
+<form method="POST" action="hc.php">
+
+<table>
+	<tr>
+		<td><p>All off (overrides all other settings):</p></td>
+		<td><select name="alloff">
+	  		<option value="N">No</option>
+	  		<option value="Y">Yes</option>
+	  					</select></td>
+	</tr>
+
+	<tr><td>HEATER 1</td></tr>
+	<tr><td>On Time (1)<input type="time" name="start1" value="08:00"></td><td>Off Time (1)<input type="time" name="end1"></td></tr>
+	<tr><td>On Time (2)<input type="time" name="start2"></td><td>Off Time (2)<input type="time" name="end2"></td></tr>
+
+
+	<tr><td>Heater Override</td></tr>
+	<tr><td><select name="heaterOverride">
+	  		<option value="none">None</option>
+	  		<option value="off">Off</option>
+	  		<option value="on">On</option>
+	</select></td></tr>
+
+
+
+	<tr><td>Temperature </td></tr>
+	<tr><td><input type="number" name="temperature" value="19"></tr></td>
+
+
+</form>
+
+</table>
+
+</body>
+</html>

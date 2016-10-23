@@ -1,0 +1,13 @@
+body{
+background-image: url("bg.jpg");
+font-family: tahoma,arial;
+
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 0px solid white;
+}
