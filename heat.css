@@ -1,13 +1,36 @@
 body{
 background-image: url("bg.jpg");
 font-family: tahoma,arial;
-
+font-size: 14px;
 }
 
 table {
     border-collapse: collapse;
+	width: 400px;
 }
 
 table, th, td {
     border: 0px solid white;
+}
+
+td
+{
+width: 200px;
+}
+
+th{
+font-weight:bold;
+color: blue;
+text-align: left;
+text-decoration: underline;
+}
+
+h1 {
+top-padding: 20px;
+height:80px;
+width: 400px;
+text-align: center;
+background-color: darkblue;
+color: white;
+font-size: 32px;
 }
