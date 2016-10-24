@@ -17,12 +17,12 @@
 
 <p>Target Temp: echo $_POST["target"];
 
-<p> On: echo $_POST["target"] Off: echo $_POST["target"];
-<p> On: echo $_POST["target"] Off: echo $_POST["target"];
+<p> On: echo $_POST["start1"] On: echo $_POST["start2"];
+<p> Off: echo $_POST["end1"] Off: echo $_POST["end2"];
 
 <h2>Overides</h2>
-<p>Sleep (all off): echo $_POST["target"];
-<p>Manual Overide:  echo $_POST["target"];
+<p>Sleep (all off): echo $_POST["alloff"];
+<p>Manual Overide:  echo $_POST["heaterOverride"];
 ?>
 
 </body>
