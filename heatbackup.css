@@ -2,59 +2,63 @@
 /*mobile first*/
 
 body{
-	font-size: 25px;
-	font-family: tahoma,arial;
-
+font-size: 50px;
 }
-
 
 .mainsection{
 	background-color: #CC9E61;
 	font-family: tahoma,arial;
+	font-size: 50px;
 	max-width: 100%;
 	margin: auto;
 	border-radius: 4px;
-	text-align: center;
+
+}
+
+table {
+    border-collapse: collapse;
+	width: 100%;
+}
+
+table, th, td {
+    border: 0px solid white;
+    height:100px;
+    padding-left: 5px;
+}
+
+td
+{
+width: 100%;
+}
+
+th{
+font-weight:bold;
+color: white;
+text-align: left;
+background-color: #626266;
+height: 60px;
 }
 
 h1 {
-	padding-top: 7px;
-	height:40px;
-	width: 100%;
-	text-align: center;
-	background-color: #626266;
-	color: white;
-	font-size: 25px;
-	border-radius: 4px;
-}
-
-h2 {
-	padding-top: 7px;
-	height:35px;
-	width: 100%;
-	text-align: center;
-	background-color: #626266;
-	color: white;
-	font-size: 17px;
-	border-radius: 4px;
-}
-
-.contentitem{
-	width: 100%;
-	text-align: center;
+padding-top: 7px;
+height:50px;
+width: 100%;
+text-align: center;
+background-color: #626266;
+color: white;
+font-size: 40px;
+border-radius: 4px;
 }
 
 select {
-    width: 90%;
+    width: 100%;
     padding: 0px 0px;
     border: none;
     border-radius: 4px;
     background-color: #938172;
     color: white;
-  	font-size: 50px;
-	text-align: center;
+    font-size: 50px;
 }
-
 
 input {
 	background-color: #938172;
@@ -63,11 +67,11 @@ input {
 	margin: 2px 2px 2px 0px;
 	color: white;
 	padding-left: 2px;
-	width: 90%;
+	width: 100%;
 	font-size: 50px;
-	text-align: center;
-}
 
+
+}
 input[type=button], input[type=submit], input[type=reset] {
     background-color: #938172;
     border: none;
@@ -94,9 +98,7 @@ input[type=button], input[type=submit], input[type=reset] {
 @media only screen and (min-width: 768px) {
 
 body{
-	font-size: 20px;
-	font-family: tahoma,arial;
-
+font-size: 20px;
 }
 
 .mainsection{
@@ -109,12 +111,29 @@ body{
 
 }
 
-
-.contentitem{
-	width: 45%;
-	float: left;
+table {
+    border-collapse: collapse;
+	width: 600px;
 }
 
+table, th, td {
+    border: 0px solid white;
+    height:40px;
+    padding-left: 5px;
+}
+
+td
+{
+width: 300px;
+}
+
+th{
+font-weight:bold;
+color: white;
+text-align: left;
+background-color: #626266;
+height: 60px;
+}
 
 h1 {
 padding-top: 7px;
@@ -125,18 +144,6 @@ background-color: #626266;
 color: white;
 font-size: 40px;
 border-radius: 4px;
-position: relative;
-}
-h2 {
-padding-top: 7px;
-height:50px;
-width: 600px;
-text-align: center;
-background-color: #626266;
-color: white;
-font-size: 40px;
-border-radius: 4px;
-position: relative;
 }
 
 select {
@@ -171,7 +178,7 @@ input[type=button], input[type=submit], input[type=reset] {
     cursor: pointer;
     border-radius: 4px;
     position: relative;
-    left: 200px;
+    left: 420px;
     font-size: 20px;
 }
 

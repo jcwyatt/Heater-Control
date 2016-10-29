@@ -15,9 +15,12 @@
 
 
 <?php
+/*read file of stored parameters*/
+$storeddata = file_get_contents('heatingdata.txt');
+/*attach parameters to variables*/
+list ($target,$start1,$end1,$start2,$end2,$alloff,$heaterOverride) = explode(",",$storeddata);
 
-$csv = array_map('str_getcsv', file('heatingdata.txt'));
-echo $csv;
+echo $target; 
 ?>
 
 
@@ -52,7 +55,7 @@ echo $csv;
 
 
 	<div class="contentitem">Target Temperature:</div>
-	<div class="contentitem"><input type="number" name="target" value="19"></div>
+	<div class="contentitem"><input type="number" name="target" value="<?=$target?>"></div>
 
 	<div class="contentitem">Current Temperature:</div>
 	<div class="contentitem">Insert Temp Here 17deg</div>
