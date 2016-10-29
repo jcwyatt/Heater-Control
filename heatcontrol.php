@@ -13,12 +13,14 @@
 
 <h1>Heater Control Settings</h1>
 
-<<<<<<< HEAD
 
 <?php
+/*read file of stored parameters*/
+$storeddata = file_get_contents('heatingdata.txt');
+/*attach parameters to variables*/
+list ($target,$start1,$end1,$start2,$end2,$alloff,$heaterOverride) = explode(",",$storeddata);
 
-$csv = array_map('str_getcsv', file('heatingdata.txt'));
-echo $csv;
+echo $target; 
 ?>
 
 
@@ -53,46 +55,7 @@ echo $csv;
 
 
 	<div class="contentitem">Target Temperature:</div>
-	<div class="contentitem"><input type="number" name="target" value="19"></div>
-=======
-
-
-<form method="POST" action="hc.php">
-
-<table>
-	<tr>
-		<td colspan="2">All off (overrides all other settings):
-		<select name="alloff">
-	  		<option value="N">No</option>
-	  		<option value="Y">Yes</option>
-	  					</select></td>
-	</tr>
-	<tr><th colspan="2">HEATER 1</th></tr>
-	<tr>
-		<td>On Time (1):<br><input type="time" name="start1" value="08:00"></td>
-		<td>On Time (2):<br><input type="time" name="start2" value="18:00"></td></tr>
-	<tr>
-		<td>Off Time (1)<br><input type="time" name="end1" value="10:00"></td>
-		<td>Off Time (2)<br><input type="time" name="end2" value="22:00"></td>
-	</tr>
-
-
-	<tr><td colspan="2">Instant Manual Override:</td></tr>
-	<tr><td colspan="2"><select name="heaterOverride">
-	  		<option value="none">None</option>
-	  		<option value="off">off now</option>
-	  		<option value="on">on now (1 hour)</option>
-	</select></td></tr>
-
-
-
-	<tr><td colspan="2">Target Temperature:</td></tr>
-	<tr><td colspan="2"><input type="number" name="target" value="19"></tr></td>
-
-	<tr><td colspan="2">Current Temperature:</td></tr>
-	<tr><td colspan="2">Insert Temp Here 17deg</tr></td>
-	<tr><td colspan="2"><input type="submit" value="Done"></td></tr>
->>>>>>> 31020229e0918200f0bedb3f32ad1ed7368a15f4
+	<div class="contentitem"><input type="number" name="target" value="<?=$target?>"></div>
 
 	<div class="contentitem">Current Temperature:</div>
 	<div class="contentitem">Insert Temp Here 17deg</div>
